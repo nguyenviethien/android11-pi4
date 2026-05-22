@@ -5,6 +5,7 @@ Scripts and device fragments used to build an Android 11 Raspberry Pi 4 image fr
 ## What is in this repo
 
 - `rpi4-mkimg.sh`
+- `AOSP13_RPI4_BUILD_AND_INSTALL_NOTES.md`
 - `device/raspberrypi/rpi4/AndroidProducts.mk`
 - `device/raspberrypi/rpi4/BoardConfig.mk`
 - `device/raspberrypi/rpi4/device.mk`
@@ -12,6 +13,10 @@ Scripts and device fragments used to build an Android 11 Raspberry Pi 4 image fr
 - `device/raspberrypi/rpi4/bootfiles/start4.elf`
 - `device/raspberrypi/rpi4/bootfiles/fixup4.dat`
 - `device/raspberrypi/rpi4/bootfiles/bcm2711-rpi-4-b.dtb`
+
+The Android 11 notes below describe this repo's scripts and fragments. See
+`AOSP13_RPI4_BUILD_AND_INSTALL_NOTES.md` for the separate successful
+Raspberry Vanilla AOSP 13 build and SD image flow.
 
 ## Source tree used
 
