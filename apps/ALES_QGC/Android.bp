@@ -1,0 +1,11 @@
+// Import the ALES QGroundControl APK into the rpi4 system image.
+
+android_app_import {
+    name: "ALES_QGC",
+    apk: "ALES_QGC.apk",
+    presigned: true,
+    privileged: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}

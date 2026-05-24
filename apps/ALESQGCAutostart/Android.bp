@@ -1,0 +1,9 @@
+// Small platform helper that launches ALES QGroundControl after boot.
+
+android_app {
+    name: "ALESQGCAutostart",
+    srcs: ["src/**/*.java"],
+    certificate: "platform",
+    privileged: true,
+    platform_apis: true,
+}

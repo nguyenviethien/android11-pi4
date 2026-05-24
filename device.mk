@@ -265,6 +265,11 @@ PRODUCT_COPY_FILES += \
 # Virtualization
 $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
 
+# ALES QGroundControl
+PRODUCT_PACKAGES += \
+    ALES_QGC \
+    ALESQGCAutostart
+
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
