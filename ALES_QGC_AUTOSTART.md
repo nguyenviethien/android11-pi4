@@ -1,12 +1,14 @@
 # ALES QGC Autostart Build Notes
 
-This device tree now includes the prebuilt ALES QGroundControl APK and a small
-system helper app that launches it automatically after Android finishes booting.
+This device tree now includes a lightweight ALES QGC test app and a small system
+helper app that launches it automatically after Android finishes booting.
 
 ## What Changed
 
-- Added `apps/ALES_QGC/ALES_QGC.apk` as a privileged prebuilt app module named
-  `ALES_QGC`.
+- Replaced the crashing prebuilt QGC APK with a simple platform-signed
+  privileged app module named `ALES_QGC`.
+- The replacement app keeps the same package/activity that the old QGC APK used:
+  `org.Agosdyne.alesqgc/org.mavlink.qgroundcontrol.QGCActivity`.
 - Added `apps/ALESQGCAutostart`, a platform-signed privileged Android app.
 - `ALESQGCAutostart` receives `LOCKED_BOOT_COMPLETED` and `BOOT_COMPLETED`,
   waits five seconds, then starts:
