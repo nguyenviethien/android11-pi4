@@ -1,9 +1,11 @@
-// Simple replacement app for validating rpi4 Android boot autostart.
+// Import the real ALES QGroundControl APK into the rpi4 system image.
 
-android_app {
+android_app_import {
     name: "ALES_QGC",
-    srcs: ["src/**/*.java"],
-    certificate: "platform",
+    apk: "ALES_QGC.apk",
+    presigned: true,
     privileged: true,
-    platform_apis: true,
+    dex_preopt: {
+        enabled: false,
+    },
 }
